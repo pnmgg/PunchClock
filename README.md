@@ -21,7 +21,7 @@
 🔧 技术栈
  
 - 架构模式：MVVM + Jetpack (Room, ViewModel, LiveData)
-- 开发语言：Kotlin
+- 开发语言：Java
 - UI 框架：Material Design 3
 - 数据存储：Room 本地数据库
 - 图表库：MPAndroidChart
