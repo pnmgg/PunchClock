@@ -1,2 +1,8 @@
-# PunchClock
-撸了么 是一款基于 Android 原生开发的习惯追踪应用。它摒弃了繁杂的功能，专注于“记录”本身。通过极简的交互和温暖的 莫兰迪 (Morandi) 视觉风格，帮助用户轻松创建打卡项目，直观地回顾历史记录，并通过可视化的数据图表分析坚持的成果。  项目采用 MVVM 架构 设计，坚持 Offline-First （离线优先）策略，所有数据存储在本地，确保用户隐私安全。
+# 🕒 PunchClock
+<p align="center">
+  < img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  < img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  < img src="https://img.shields.io/badge/MVVM-FF6B6B?style=for-the-badge&logo=viewmodel&logoColor=white" />
+  < img src="https://img.shields.io/badge/Room-FFD166?style=for-the-badge&logo=sqlite&logoColor=black" />
+  < img src="https://img.shields.io/github/license/pnmgg/PunchClock?style=for-the-badge" />
+</p >
