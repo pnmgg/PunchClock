@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        // 阿里云 Gradle 插件仓库（核心，替代谷歌官方插件仓库）
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        // 阿里云中央仓库
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        // 阿里云谷歌仓库（替代 google() 官方仓库）
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 阿里云jcenter仓库（替代 jcenter()，部分老依赖仍需）
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // 阿里云谷歌仓库（优先，替代 google()）
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 阿里云中央仓库（替代 mavenCentral()）
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        // 阿里云jcenter仓库（兼容老项目）
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+// 保留项目原有模块配置，无需修改（示例，以你的项目实际内容为准）
+rootProject.name = "YourProjectName"
+include ':app'
+// 若有其他模块，继续添加，如 include ':library'

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Morandi Palette -->
+    <color name="morandi_bg">#E9EAE5</color>
+    <color name="morandi_primary">#7B8D8E</color>
+    <color name="morandi_accent">#C08E88</color>
+    <color name="morandi_secondary">#9DA8A4</color>
+    <color name="morandi_text">#5E616D</color>
+    
+    <!-- Neomorphism Palette (Morandi Adjusted) -->
+    <color name="neumorph_bg">#E9EAE5</color>
+    <color name="neumorph_bg_dark">#DCDDD8</color>
+    <color name="neumorph_bg_darker">#CFCFC9</color>
+    
+    <color name="neumorph_shadow_light">#FFFFFF</color>
+    <color name="neumorph_shadow_dark">#B0B4B0</color>
+    <color name="neumorph_text">#5E616D</color>
+    <color name="neumorph_text_hint">#9498A0</color>
+    <color name="neumorph_highlight_overlay">#80FFFFFF</color>
+    <color name="neumorph_accent">#C08E88</color>
+
+    <!-- Modern Palette -->
+    <color name="primary_color">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary_color">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+    
+    <color name="background_light">#F5F6FA</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <color name="text_primary_light">#212121</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+
+    <color name="accent_gradient_start">#6200EE</color>
+    <color name="accent_gradient_end">#BB86FC</color>
+    
+    <color name="success_color">#4CAF50</color>
+    <color name="error_color">#B00020</color>
+</resources>

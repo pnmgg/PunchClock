@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed State (Active) - Debossed (Gradient Border + Darker BG) -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Border: Dark TL -> Light BR -->
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="16dp"/>
+                    <gradient 
+                        android:angle="315"
+                        android:startColor="@color/neumorph_shadow_dark"
+                        android:endColor="@color/neumorph_shadow_light"
+                        android:type="linear"/>
+                </shape>
+            </item>
+            <!-- Inner BG -->
+            <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/neumorph_bg_dark"/>
+                    <corners android:radius="14dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Normal State (Embossed) -->
+    <item>
+        <layer-list>
+            <!-- Dark Shadow (BR) -->
+            <item android:left="6dp" android:top="6dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/neumorph_shadow_dark"/>
+                    <corners android:radius="16dp"/>
+                </shape>
+            </item>
+            <!-- Light Shadow (TL) -->
+            <item android:right="6dp" android:bottom="6dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/neumorph_shadow_light"/>
+                    <corners android:radius="16dp"/>
+                </shape>
+            </item>
+            <!-- Surface -->
+            <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/neumorph_bg"/>
+                    <corners android:radius="16dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

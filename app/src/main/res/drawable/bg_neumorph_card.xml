@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark Shadow (Bottom-Right) -->
+    <!-- Shifted down-right by adding top/left padding to the item -->
+    <item android:left="6dp" android:top="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/neumorph_shadow_dark"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    
+    <!-- Light Shadow (Top-Left) -->
+    <!-- Shifted up-left by adding bottom/right padding to the item -->
+    <item android:right="6dp" android:bottom="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/neumorph_shadow_light"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    
+    <!-- Surface (Center) -->
+    <!-- Inset to allow shadows to peek through. 
+         Ideally, we want the surface to cover the overlap of shadows.
+         We use slight inset to ensure shadows are visible at edges.
+    -->
+    <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/neumorph_bg"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</layer-list>

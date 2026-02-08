@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Input Field: Inset Look -->
+    
+    <!-- 1. Gradient Border (Dark TL -> Light BR) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp"/>
+            <gradient 
+                android:angle="315"
+                android:startColor="@color/neumorph_shadow_dark"
+                android:endColor="@color/neumorph_shadow_light"
+                android:type="linear"/>
+            <!-- Angle 135: Top-Left to Bottom-Right? 
+                 0: L->R
+                 45: BL->TR
+                 90: B->T
+                 135: BR->TL (Wait, standard is counter-clockwise or clockwise?)
+                 Android: 0=Left->Right, 90=Bottom->Top, 180=Right->Left, 270=Top->Bottom.
+                 So 225=Top-Right->Bottom-Left?
+                 Actually:
+                 0: Start(Left) -> End(Right)
+                 270: Start(Top) -> End(Bottom)
+                 315: Start(Top-Left) -> End(Bottom-Right)
+                 
+                 We want Start=Dark(TL), End=Light(BR). So 315.
+            -->
+        </shape>
+    </item>
+    
+    <!-- 2. Background Fill (Inset by 2dp) -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/neumorph_bg"/>
+            <corners android:radius="10dp"/> <!-- Slightly smaller radius for inner -->
+        </shape>
+    </item>
+</layer-list>
